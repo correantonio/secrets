@@ -1,0 +1,14 @@
+// @use '../02-tools/measure' as *;
+
+$radius: 4px;
+
+$container-max-width: 1120;
+$container-cols: 12;
+$container-gap: 32px;
+
+$breakpoint: (
+  'sm' : 768,
+  'md' : 1024,
+  'lg' : 1440,
+  'xl' : 1920,
+);
