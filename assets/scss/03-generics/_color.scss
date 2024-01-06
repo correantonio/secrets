@@ -1,0 +1,8 @@
+@use '../01-settings/color' as *;
+@use '../02-tools/color' as *;
+
+@each $color, $name in $brand {
+  .color-#{$color}{
+    color: p-color($color);
+  }
+}
