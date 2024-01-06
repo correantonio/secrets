@@ -1,0 +1,53 @@
+@use 'sass:math';
+@use '../01-settings/font' as t;
+@use '../02-tools/color' as *;
+@use '../02-tools/rem' as m;
+
+%margin-none {
+  margin: 0;
+}
+
+%font-family{
+  font-family: t.$global-font-family;
+}
+
+// ====================================
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  @extend %margin-none, %font-family;
+  background-color: e-color(50);
+  color: e-color(200);
+  font-size: m.rem( map-get(t.$global-font-sizes, 'base') );
+  line-height: math.round( map-get(t.$global-font-sizes, 'base') * 1.33 ) + px;
+}
+
+@for $i from 1 through 4 {
+  h#{$i}{
+    @extend %margin-none, %font-family;
+  }
+}
+
+p{
+  @extend %margin-none, %font-family;
+}
+
+ul {
+  @extend %margin-none;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  @extend %margin-none;
+  max-width: 100%;
+  display: block;
+}
