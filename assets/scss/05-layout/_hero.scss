@@ -1,0 +1,13 @@
+@use '../02-tools/grid' as *;
+
+.l-hero{
+  .container{
+    align-items: center;
+  }
+  .conteudo{
+    width: grid(7);
+  }
+  .preco__hero{
+    width: grid(5);
+  }
+}

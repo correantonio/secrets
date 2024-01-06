@@ -1,0 +1,38 @@
+@use '../02-tools/color' as *;
+
+.preco{
+
+  &__header{
+    span{
+      display: block;
+      margin-top: .75rem;
+    }
+  }
+
+  &__beneficios{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  &__item{    
+
+    &::before{
+    content: "";
+    background-image: url('/assets/icons/price-card/fluent_checkmark-24-regular.svg');
+    display: inline-block;
+    height: 24px;
+    margin-right: .5rem;
+    vertical-align: middle;
+    width: 24px;
+  }
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__economia{
+      display: block;
+      margin-top: 1rem;
+      text-align: center;
+  }
+}

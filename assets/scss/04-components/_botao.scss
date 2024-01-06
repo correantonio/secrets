@@ -1,0 +1,36 @@
+@use '../02-tools/color' as *;
+@use '../01-settings/sizes' as s;
+@use '../02-tools/rem' as r;
+.botao{
+  
+  &--link{
+    align-items: center;
+    color: p-color(500);
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    max-width: fit-content;
+    position: relative;
+    &::after{
+      background: p-color(500);
+      bottom: -4px;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  &--principal{
+    background: p-color(400);
+    border-radius: s.$radius;
+    box-shadow: 0px 4px 16px 0px #F2A978;
+    color: p-color(600);
+    display: block;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

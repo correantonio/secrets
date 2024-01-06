@@ -1,0 +1,17 @@
+.alunos{
+  &-lista{
+    align-items: center ;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    & > div {
+      display: inherit;
+      & > :not(:first-child){
+        margin-left: -12px;
+      }
+      img{
+        border-radius: 50%;
+      }
+    }
+  }
+}

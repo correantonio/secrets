@@ -1,0 +1,10 @@
+@use '../01-settings/sizes' as s;
+@use '../02-tools/rem' as r;
+
+.container{
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: s.$container-max-width + px;
+  padding: r.rem(80) 0;
+}
