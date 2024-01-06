@@ -1,0 +1,12 @@
+@use 'sass:math';
+@use '../01-settings/sizes' as s;
+
+
+@function grid($col, $cols: s.$container-cols, $gap: s.$container-gap){
+
+  $width: ( math.div($col, $cols) * 100 ) + "%";
+  $width-not-gap: calc(#{$width} - #{$gap});
+
+  @return $width-not-gap;
+
+}
