@@ -1,5 +1,8 @@
 @use '../02-tools/color' as *;
 
+$card-preco-icons: 'check', 'block';
+$card-preco-icon-size: 24px;
+
 .preco{
 
   &__header{
@@ -17,22 +20,58 @@
   &__item{    
 
     &::before{
-    content: "";
-    background-image: url('/assets/icons/price-card/fluent_checkmark-24-regular.svg');
-    display: inline-block;
-    height: 24px;
-    margin-right: .5rem;
-    vertical-align: middle;
-    width: 24px;
-  }
+      content: "";
+      display: inline-block;
+      height: $card-preco-icon-size;
+      margin-right: .5rem;
+      vertical-align: middle;
+      width: $card-preco-icon-size;
+    } 
+
+    @each $icon in $card-preco-icons{
+      &--#{$icon}::before{
+        background: no-repeat url('/assets/icons/list/#{$icon}.svg');
+      }
+    }
+
+    &--block{
+      text-decoration: line-through;
+    }
+
+
     &:not(:last-child){
       margin-bottom: 1rem;
     }
   }
 
-  &__economia{
-      display: block;
-      margin-top: 1rem;
-      text-align: center;
+}
+.formas-pagamento{
+  filter: grayscale(1);
+}
+
+.recomendado{
+  $pseudo-size: 32px;
+
+  background-color: e-color(50);
+  // border-bottom-right-radius: 8px;
+  // border-top-left-radius: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  left: -8px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 16px;
+
+  &::before{
+    background: linear-gradient(p-color(500), darken(#E07A36, 5%));
+    border-radius: inherit;
+    bottom: -2px;
+    content: "";
+    display: block;
+    height: 110%;
+    left: -4px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
   }
 }
