@@ -1,7 +1,7 @@
 @use '../02-tools/color' as *;
 
 .faixa{
-  background: p-color(500);
+  background: p-color(400);
   padding: 8px;
   &__texto{
     color: p-color(600);
