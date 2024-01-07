@@ -5,7 +5,8 @@
 @function grid($col, $cols: s.$container-cols, $gap: s.$container-gap){
 
   $width: ( math.div($col, $cols) * 100 ) + "%";
-  $width-not-gap: calc(#{$width} - #{$gap});
+  // $width-not-gap: calc(#{$width} - #{$gap});
+  $width-not-gap: #{$width};
 
   @return $width-not-gap;
 
