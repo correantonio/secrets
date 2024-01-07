@@ -4,6 +4,12 @@
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+    &--icone{
+      background: no-repeat url('/assets/icons/others/round-check.svg');
+      display: block;
+      height: 32px;
+      width: 32px;
+    }
     & > div {
       display: inherit;
       & > :not(:first-child){
