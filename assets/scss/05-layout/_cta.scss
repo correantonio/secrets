@@ -1,0 +1,26 @@
+@use '../02-tools/color' as *;
+@use '../02-tools/grid' as *;
+@use '../01-settings/sizes' as border;
+
+
+.l-cta{
+  .cta-container{
+    align-items: center;
+    background-color: p-color(400);
+    border-radius: border.$radius;
+    box-shadow: 0px 4px 16px 0px #F2A978;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: grid(12);
+
+    & > div {
+      color: p-color(600);
+    }
+  }
+
+  .botao--principal{
+    background: e-color(50);
+    color: p-color(600);
+  }
+}

@@ -1,0 +1,15 @@
+@use '../02-tools/color' as *;
+
+.l-footer{
+  background: e-color(100);
+  .container{
+    justify-content: center;
+
+    & > div > div {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

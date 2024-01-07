@@ -6,9 +6,13 @@
     width: grid(6);
     & > div{
       top: 80px;
-      position: sticky;  
+      position: sticky;
     }
   }
+
+ .alunos-lista{
+  margin-top: 4rem;
+ }
 
   .feedbacks{
     display: flex;
@@ -37,6 +41,6 @@
 
   .card__feedback{
     position: sticky;
-    top: 0;
+    top: 80px;
   }
 }

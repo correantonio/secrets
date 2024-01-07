@@ -1,0 +1,63 @@
+@use '../02-tools/color' as *;
+@use '../02-tools/grid' as *;
+
+
+.l-faq{
+
+  .container > div{
+    width: grid(4);
+  }
+
+  .container .faq-list{
+    width: grid(8);
+  }
+
+
+  .faq-list details{
+    border-bottom: 1px solid e-color(200);
+    cursor: pointer;
+    padding: 1rem;
+    transition: all ease-in-out 650ms;
+  }
+
+  .faq-list details[open]{
+    border: 1px solid e-color(200);
+    border-radius: 8px;
+    background: e-color(100);
+  }
+
+
+  details[open] summary{
+    margin-bottom: .75rem;
+  }
+
+  details[open] summary::after{
+    background: no-repeat url("/assets/icons/others/less.svg");
+  }
+
+  .faq-list details:not(:last-child){
+    margin-bottom: 1rem;
+  }
+
+  summary{
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    transition: all ease-in-out 650ms;
+
+  }
+
+  summary::marker{
+    display: none;
+  }
+
+  summary::after{
+    background: no-repeat url("/assets/icons/others/more.svg");
+    content: "";
+    display: block;
+    height: 24px;
+    width: 24px;
+  }
+
+}
