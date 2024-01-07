@@ -1,6 +1,8 @@
 @use '../01-settings/sizes' as border;
 @use '../02-tools/color' as *;
 @use '../02-tools/grid' as *;
+@use '../02-tools/breakpoints' as *;
+@use '../02-tools/rem' as *;
 
 $card-images: 'atualizacao', 'aberto', 'comunidade', 'garantia';
 $icon-size: 64px;
@@ -11,7 +13,11 @@ $icon-size: 64px;
 //==================
 .card{
   padding: 4rem 1.5rem 2rem 1.5rem;
-  
+  @include device(sm){
+    padding: rem(64) rem(24);
+  }
+
+
   &--bg{
     @extend %card-radius;
     background: e-color(100);
@@ -36,24 +42,7 @@ $icon-size: 64px;
   }
 
 
-  &-list__beneficio{
-    display: flex;
-    gap: 32px;
-  }
-
-  &-beneficio{
-    width: grid(4);
-
-    &__header{
-      margin-bottom: .75rem;
-
-      h3{
-        font-size: 1.5rem;
-        line-height: 32px;
-      }
-    }
-
-  }
+ 
 
   &__preco--anual{
     position: relative;

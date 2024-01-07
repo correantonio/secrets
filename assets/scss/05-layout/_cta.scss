@@ -1,6 +1,7 @@
 @use '../02-tools/color' as *;
 @use '../02-tools/grid' as *;
 @use '../01-settings/sizes' as border;
+@use '../02-tools/breakpoints' as *;
 
 
 .l-cta{
@@ -13,10 +14,23 @@
     justify-content: space-between;
     padding: 1.5rem;
     width: grid(12);
+    
+    @include device(sm){
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
 
+      .alunos-lista{
+        justify-content: center;
+      }
+      & > div {
+        text-align: center;
+      }
+    }
     & > div {
       color: p-color(600);
     }
+    
   }
 
   .botao--principal{
