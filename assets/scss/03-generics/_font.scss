@@ -24,3 +24,12 @@
     @extend %font-weight;
   }
 }
+
+.font-center{
+  text-align: center;
+}
+
+.font-secao{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
