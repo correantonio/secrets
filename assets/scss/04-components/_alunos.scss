@@ -1,23 +1,29 @@
+@use '../02-tools/rem' as *;
+
 .alunos{
   &-lista{
-    align-items: center ;
+    align-items: center;
     display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: rem(32);
+    
+    & > :not(:first-child){
+      margin-left: -12px;
+    }
+    
+    & > :last-child{
+      margin-left: rem(16);
+    }
+
     &--icone{
       background: no-repeat url('/assets/icons/others/round-check.svg');
       display: block;
       height: 32px;
       width: 32px;
     }
-    & > div {
-      display: inherit;
-      & > :not(:first-child){
-        margin-left: -12px;
-      }
-      img{
-        border-radius: 50%;
-      }
+    
+    img{
+      border-radius: 50%;
     }
+
   }
 }
