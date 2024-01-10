@@ -30,29 +30,29 @@
   details[open] summary{
     margin-bottom: .75rem;
   }
-
-  details[open] summary::after{
+  details[open] .faq__icon{
     background: no-repeat url("/assets/icons/others/less.svg");
-  }
 
+  }
+  
   .faq-list details:not(:last-child){
     margin-bottom: 1rem;
   }
 
   summary{
-    align-items: center;
-    display: flex;
-    gap: 32px;
+    align-content: center;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto 24px;
     justify-content: space-between;
     transition: all ease-in-out 650ms;
-
   }
 
   summary::marker{
     display: none;
   }
 
-  summary::after{
+  .faq__icon{
     background: no-repeat url("/assets/icons/others/more.svg");
     content: "";
     display: block;
