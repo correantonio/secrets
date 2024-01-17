@@ -1,0 +1,24 @@
+.ribbon {
+	max-width: 100%;
+	overflow-x: hidden;
+	position: relative;
+  display: block;
+
+
+	&__wrapper {
+		display: flex;
+		gap: 1rem;
+		padding: 1rem 0;
+	}
+	&__text {
+		text-transform: uppercase;
+		font: 400 1.125rem/ 24px sans-serif;
+		text-wrap: nowrap;
+
+		&::after {
+			content: "//";
+			display: inline-block;
+			margin-left: 1rem;
+		}
+	}
+}

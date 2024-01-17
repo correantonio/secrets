@@ -1,0 +1,19 @@
+@use '../01-settings/sizes' as *;
+
+@mixin device($size){
+  @if $size == 'sm' {
+    @media screen and (min-width: ( #{map-get($breakpoint, 'sm')} + px ) )  and (max-width: #{(map-get($breakpoint, 'md') - 1) + px}) {
+      @content;
+    }
+  }
+  @else if $size == 'md'{
+    @media screen and (min-width: ( #{map-get($breakpoint, 'md')} + px ) )  and (max-width: #{(map-get($breakpoint, 'lg') - 1) + px}){
+      @content;
+    }
+  }
+  @else if $size == "lg"{
+    @media screen and (min-width: ( #{map-get($breakpoint, 'lg')} + px ) )  and (max-width: #{(map-get($breakpoint, 'xl') - 1) + px}){
+      @content;
+    }
+  }
+}

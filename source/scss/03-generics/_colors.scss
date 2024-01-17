@@ -1,0 +1,9 @@
+@use '../01-settings/colors' as *;
+@use '../02-tools/colors' as *;
+@use 'sass:list';
+
+@each $cor in $brand {
+  .color-#{list.nth($cor, 1)}{
+    color: p-color(list.nth($cor, 1));
+  }
+}

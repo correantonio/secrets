@@ -1,0 +1,30 @@
+@use '../02-tools/colors' as *;
+
+$badge-icon-list: ('shield', 'thunder', 'flag', 'student');
+
+.badge{
+  align-items: center;
+  background: p-color(700);
+  color: p-color(50);
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 24px;
+  max-width: fit-content;
+  padding: 4px 16px;
+
+  &::before{
+    $icon-size: 24px;
+    content: "";
+    display: block;
+    height: $icon-size;
+    width: $icon-size;
+
+  }
+  @each $icon in $badge-icon-list{
+   &--#{$icon}{
+    &::before{
+        background: no-repeat url('/source/icons/badge/#{$icon}.svg');
+      }
+    }
+  }
+}

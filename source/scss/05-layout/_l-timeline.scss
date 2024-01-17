@@ -1,0 +1,84 @@
+@use '../02-tools/grid' as *;
+@use '../02-tools/colors' as *;
+
+%flex-commons{
+  display: flex;
+  gap: 2rem;
+}
+
+%flex-align{
+  align-items: center;
+}
+
+%card-commons{
+  width: grid(4);
+  background: #fff;
+}
+
+
+.l-timeline{
+  .wrapper{
+    flex-direction: column;
+  }
+
+  header{
+    @extend %flex-align;
+    @extend %flex-commons;
+    margin-bottom: 2.5rem;
+    width: grid(12);
+  }
+
+  .timeline-list{
+    @extend %flex-commons;
+    margin-bottom: 2rem
+  }
+
+  .timeline-item{
+    @extend %card-commons;
+
+    p{
+      margin-bottom: 1.5rem
+    }
+  
+    ul{
+      @extend %flex-commons;
+      flex-direction: column;
+    }
+
+    li::before{
+      $pseudo-size: 8px;
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid p-color(400);
+      content: "";
+      display: inline-block;
+      height: $pseudo-size;
+      margin-right: $pseudo-size;
+      width: $pseudo-size;
+    }
+
+  }
+
+  .timeline-courses{
+    box-shadow: 0 80px 0 p-color(400), 
+    40px 80px 0 p-color(400),
+    -40px 80px 0 p-color(400),
+    inset 0 -80px 0 p-color(400);
+
+    & > div{
+      @extend %flex-commons;
+    }
+  }
+
+  .timeline-course{
+    @extend %card-commons;
+    
+    &__badge{
+      background: transparentize(#F2C2C2, .7);
+      border: 1px solid currentColor;
+      display: block;
+      padding: 4px .5rem;
+      text-wrap: nowrap;
+    }
+  }
+}

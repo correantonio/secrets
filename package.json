@@ -1,0 +1,15 @@
+{
+  "name": "re-secrets",
+  "version": "1.0.0",
+  "description": "Refatoração do site do Secrets criado para @_correacris",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./source/scss/style.scss ./source/css/style.css --style=expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

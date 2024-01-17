@@ -1,0 +1,12 @@
+@use '../01-settings/colors' as *;
+
+$p-color:   'brand';
+$s-color:  'light';
+
+@function p-color($variavel, $array: $brand){
+  @return var(--#{$p-color}-#{$variavel})
+};
+
+@function e-color($variavel, $array: $elements){
+  @return var(--#{$s-color}-#{$variavel})
+};

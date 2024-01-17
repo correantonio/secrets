@@ -1,0 +1,52 @@
+@use '../02-tools/grid' as *;
+
+%position-sticky{
+  position: sticky;
+  top: 80px;
+}
+
+.l-testimonials{
+  .wrapper > div {
+    width: grid(6);
+  }
+
+  .wrapper > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  h2{
+    margin-bottom: 2.5rem;
+    @extend %position-sticky;
+  }
+
+  ul{
+    position: sticky;
+    top: 200px;
+  }
+
+  .testimonial{
+    background: #fff;
+    border: 1px solid #EBEBEB;
+    @extend %position-sticky;
+    
+
+    .stars{
+      font-size: 48px;
+      line-height: 90%;
+    }
+
+    &__footer{
+      background: #f6f6f6;
+      border-top: inherit;
+      img{
+        $image-size: 64px;
+        border-radius: 50%;
+        height: $image-size;
+        object-fit: cover;
+        width: $image-size;
+      }
+    }
+  }
+}

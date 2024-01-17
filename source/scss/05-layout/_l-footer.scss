@@ -1,0 +1,14 @@
+@use '../02-tools/colors' as *;
+
+.l-footer{
+  .wrapper{
+    justify-content: center;
+
+    & > div > div {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@use 'sass:list';
+@use 'sass:math';
+@use '../01-settings/font' as * ;
+@use '../02-tools/rem' as m;
+
+%font-defaults{
+  font-family: $global-font-family;
+  font-weight: 400;
+}
+
+%font-weight{
+  font-weight: 700;
+}
+
+
+@each $index in $global-font-sizes {
+  .font-#{list.nth($index, 1)}{
+    @extend %font-defaults;
+    line-height: math.round( list.nth($index, 2) * 1.33 ) + px;
+    font-size: m.rem(list.nth($index, 2));
+  }
+
+  .font-#{list.nth($index, 1)}--b{
+    @extend %font-weight;
+  }
+}
+
+.font-center{
+  text-align: center;
+}
+
+.font-secao{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}

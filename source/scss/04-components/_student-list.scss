@@ -1,0 +1,29 @@
+@use '../02-tools/colors' as *;
+
+.student-list{
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  img{
+    $size: 48px;
+    border-radius: 50%;
+    border: 2px solid p-color(50);
+    height: $size;
+    object-fit: cover;
+    width: $size;
+  }
+
+  & > :not(:first-child){
+    margin-left: -16px;
+  }
+
+  & > :last-child{
+    margin-left: 1rem;
+  }
+
+  span{
+    color: e-color(100);
+  }
+
+}

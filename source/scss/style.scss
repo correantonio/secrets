@@ -1,0 +1,16 @@
+@import './01-settings/';
+@import './02-tools/';
+
+:root{
+  @each $name, $color in $elements{
+     --light-#{$name}: #{$color}; 
+  }
+
+  @each $name, $colorValue in $brand{
+    --brand-#{$name}: #{$colorValue};
+  }
+};
+
+@import './03-generics/';
+@import './04-components/';
+@import './05-layout/';

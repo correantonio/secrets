@@ -1,0 +1,26 @@
+@use '../02-tools/grid' as *;
+
+.l-about{
+
+  .wrapper{
+    flex-direction: column;
+  }
+
+  & .wrapper > div{
+    display: flex;
+    gap: inherit;
+  }
+
+  .card--colorful{
+    width: grid(4);
+  }
+
+  ul{
+    display: flex;
+    gap: inherit;
+    li.card{
+      width: grid(4);
+      background: #fff;
+    }
+  }
+}

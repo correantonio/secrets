@@ -1,0 +1,9 @@
+@use '../01-settings/sizes' as *;
+
+.wrapper{
+  display: flex;
+  gap: $container-gap;
+  margin: 0 auto;
+  max-width: $container-max-width + px;
+  padding: 5rem 0;
+}

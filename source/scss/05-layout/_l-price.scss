@@ -1,0 +1,104 @@
+@use '../02-tools/grid' as *;
+@use '../02-tools/colors' as *;
+
+.l-price{
+  .wrapper{
+    flex-direction: column;
+  }
+
+  header{
+    width: grid(6);
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }  
+
+  header + div {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .benefits{
+    width: grid(4);
+
+    &__card{
+      & > div {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    &__card:not(:last-child){
+      margin-bottom: 2rem;
+    }
+
+    & > :nth-child(2){
+      background: #fff;
+      box-shadow: 0px 8px 16px 0px rgba(23, 0, 0, 0.04);
+    }
+
+  }
+
+  .plano-anual,
+  .plano-mensal{
+    width: grid(4);
+    background: #fff;
+    
+    .preco-xxl{
+      font-size: 80px;
+      font-weight: bold;
+      letter-spacing: -8px;
+      display: inline-block;
+      margin: 1rem 0;
+    }
+  }
+
+  .plano-anual{
+    position: relative;
+
+    .plano-badge{
+      left: -1rem;
+      position: absolute;
+      top: -1rem;
+    }
+  }
+
+  .plano-list{
+    margin-top: 2rem;
+
+    &__item{
+      align-items: center;
+      display: flex;
+
+      
+      
+      &::before{
+        $after-icon-size: 24px;
+        background: no-repeat url("/source/icons/list/check.svg") center/ cover;
+        content: "";
+        display: inline-block;
+        height: $after-icon-size;
+        margin-right: 1rem;
+        vertical-align: middle;
+        width: $after-icon-size;
+      }
+    
+      &:not(:last-child){
+        margin-bottom: 1rem;
+      }
+
+    }
+  }
+
+  .plano-footer{
+    margin-top: 4rem;
+  }
+
+
+  .button{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+}

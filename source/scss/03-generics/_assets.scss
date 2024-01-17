@@ -1,0 +1,51 @@
+@use '../01-settings/font' as font;
+@use '../02-tools/colors' as *;
+
+
+%font-defaults{
+  font-family: font.$global-font-family;
+  color: e-color(100);
+}
+
+%reset-default{
+  margin: 0;
+  padding: 0;
+}
+
+dl, dd{
+  @extend %reset-default;
+}
+
+p{
+  @extend %font-defaults;
+  @extend %reset-default;
+}
+
+body{
+  @extend %font-defaults;
+  @extend %reset-default;
+  background-color: #f6f6f6;
+}
+
+@for $i from 1 through 3 {
+  h#{$i}{
+    @extend %font-defaults;
+    @extend %reset-default;
+  }
+}
+
+a{
+  color: currentColor;
+  text-decoration: none;
+}
+
+img{
+  @extend %reset-default;
+  display: block;
+  max-width: 100%;
+}
+
+ul{
+  @extend %reset-default;
+  list-style: none;
+}
