@@ -23,6 +23,10 @@ ul, img, h3, h2, h1, body, p, dl, dd {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f6f6f6;
 }
@@ -309,15 +313,21 @@ ul {
 }
 
 .ribbon__text {
-  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  flex: 0 0 305px;
   font: 400 1.125rem/24px sans-serif;
+  text-transform: uppercase;
   text-wrap: nowrap;
 }
 
 .ribbon__text::after {
-  content: "//";
+  background: no-repeat url("/source/icons/others/ribbon-star.svg");
+  content: "";
   display: inline-block;
+  height: 24px;
   margin-left: 1rem;
+  width: 24px;
 }
 
 #l-hero {

@@ -11,14 +11,21 @@
 		padding: 1rem 0;
 	}
 	&__text {
-		text-transform: uppercase;
+		align-items: center;
+		display: flex;
+		flex: 0 0 305px;
 		font: 400 1.125rem/ 24px sans-serif;
+		text-transform: uppercase;
 		text-wrap: nowrap;
 
 		&::after {
-			content: "//";
+			$ribbon-icon-size: 24px;
+			background: no-repeat url("/source/icons/others/ribbon-star.svg");
+			content: "";
 			display: inline-block;
+			height: $ribbon-icon-size;
 			margin-left: 1rem;
+			width: $ribbon-icon-size;
 		}
 	}
 }
