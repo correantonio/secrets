@@ -1,9 +1,24 @@
 @use '../02-tools/grid' as *;
-
+@use '../02-tools/breakpoint' as *;
 
 #l-hero{
   background: linear-gradient(#170000 , #360202);
-  padding: 2rem 0;
+  padding: 2rem 1.5rem 156px 1.5rem;
+
+  @include device(md){
+    .wrapper{
+      flex-direction: column;
+    }
+  }
+
+  .button--menu{
+    @include device(md){
+      font-size: 1rem;
+      text-align: center;
+      padding: .5rem;
+    }
+  }
+
 
   .font-xl{
     margin-bottom: .5rem;
@@ -12,20 +27,37 @@
     margin-bottom: 1rem;
   }
 
-  & > div {
+  & > :nth-child(1){
+    justify-content: end;
+    padding: 0 0 40px 0;
+  }
+
+  & > :nth-child(2) {
     background: #f6f6f6;
-    box-shadow: 0 80px 0 #f6f6f6;
+    box-shadow: 0 112px 0 #f6f6f6;
     margin: 0 auto;
     max-width: fit-content;
     padding: 0 4rem;
     position: relative;
+
+    @include device(md){
+      padding: 0 1rem;
+    }
+
   }
 
   .conteudo{
     width: grid(6);
+    @media screen and (max-width: 1120px){
+      width: grid(12);
+    }
   }
 
   .imgs{
+    @media screen and (max-width: 1120px){
+      display: none;
+    }
+    
     width: grid(6);
 
     & > div {
@@ -55,6 +87,50 @@
       position: absolute;
       right: 0;
       top: 0;
+    }
+  }
+
+  .rounded-icon{    
+    $rounded-size: fit-content;
+    background: no-repeat url("/source/icons/card/rounded-icon.png") ;
+    display: grid;
+    height: $rounded-size;
+    padding: 1.5rem 1.5rem 1.8rem 1.5rem;
+    place-content: center;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(100%, -90%);
+    width: $rounded-size;
+    z-index: 999;
+    
+    &--key{
+      $rounded-size: 64px;
+      background: no-repeat url("/source/icons/card/key.svg") center/ cover;
+      display: block;
+      height: $rounded-size;
+      width: $rounded-size;
+      margin-top: 5px;
+    }
+  }
+
+  .ribbon{
+    left: 0;
+    position: absolute;
+    
+    @include device(sm){
+      display: none;
+    }
+    @media screen and (min-width: 808px){
+      bottom: 120px;
+    }
+
+    @media screen and (min-width: 899px) {
+      bottom: 200px;
+    }
+
+    @media screen and (min-width: 1121px) {
+      bottom: 80px;
     }
   }
 }

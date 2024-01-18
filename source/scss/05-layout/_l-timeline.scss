@@ -1,5 +1,6 @@
 @use '../02-tools/grid' as *;
 @use '../02-tools/colors' as *;
+@use '../02-tools/breakpoint' as *;
 
 %flex-commons{
   display: flex;
@@ -26,15 +27,29 @@
     @extend %flex-commons;
     margin-bottom: 2.5rem;
     width: grid(12);
+
+    @include device(sm){
+     flex-direction: column;
+     gap: 1rem;
+    }
   }
 
   .timeline-list{
     @extend %flex-commons;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+
+    @include device(sm){
+      flex-direction: column; 
+    }
+    
   }
 
   .timeline-item{
     @extend %card-commons;
+    
+    @include device(sm){
+      width: auto;  
+    }
 
     p{
       margin-bottom: 1.5rem
@@ -68,10 +83,26 @@
     & > div{
       @extend %flex-commons;
     }
+
+    @include device(sm){
+     & > div{
+      flex-direction: column;
+      background: p-color(400);
+     } 
+    }
   }
 
   .timeline-course{
     @extend %card-commons;
+    justify-content: space-between;
+
+    @include device(md){
+      width: auto; 
+    }
+
+    @media screen and (max-width: 1089px){
+      flex-wrap: wrap;
+    }
     
     &__badge{
       background: transparentize(#F2C2C2, .7);

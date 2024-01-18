@@ -13,18 +13,21 @@
     padding: 1.5rem;
     width: grid(12);
     
-    @include device(sm){
+    @media screen and (max-width: 1089px){
+      
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-
-      .alunos-lista{
+  
+      .student-list{
         justify-content: center;
+        text-align: initial;
       }
       & > div {
         text-align: center;
       }
     }
+
     & > div {
       color: p-color(600);
     }

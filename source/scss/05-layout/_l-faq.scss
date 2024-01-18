@@ -1,5 +1,19 @@
+@use '../02-tools/breakpoint' as *;
+
 .l-faq{
   
+  .wrapper{
+    
+    @include device(sm){
+      flex-direction: column;
+
+      & > :nth-child(1){
+        text-align: center;
+      }
+    }
+    
+  }
+
   dl{
     div{
       background: #f6f6f6;

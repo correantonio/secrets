@@ -1,5 +1,17 @@
 @use '../02-tools/grid' as *;
 @use '../02-tools/colors' as *;
+@use '../02-tools/breakpoint' as *;
+
+%pseudos{
+  content: "";
+  display: inline-block;
+}
+
+%breakpoints{
+  @include device(sm){
+    width: auto;
+  }
+}
 
 .l-price{
   .wrapper{
@@ -10,15 +22,47 @@
     width: grid(6);
     margin: 0 auto;
     margin-bottom: 2.5rem;
-  }  
+    
+    @media screen and (max-width: 1089px){
+      width: auto;
+    }
 
-  header + div {
-    display: flex;
-    gap: 2rem;
+    
+    & + div {
+      display: flex;
+      gap: 2rem;
+      @include device(sm){
+        flex-direction: column;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1089px){
+        flex-wrap: wrap;
+        ul.benefits{
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: repeat(2, 1fr);
+          width: grid(12);
+        }
+      }
+    }
   }
 
   .benefits{
     width: grid(4);
+    
+    @include device(sm){
+      width: auto;
+    }
+
+    &__info {
+      border: 1px solid rgb(235, 235, 235);
+      background: transparentize(#fff, .6);
+
+      & > .card-icon{
+        $icon-size: 24px;
+        width: $icon-size;
+        height: $icon-size;
+      }
+    }
 
     &__card{
       & > div {
@@ -43,6 +87,14 @@
   .plano-mensal{
     width: grid(4);
     background: #fff;
+    
+    @include device(sm){
+      width: auto;
+      align-items: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1089px){
+      flex: 1;
+    }
     
     .preco-xxl{
       font-size: 80px;
@@ -69,18 +121,28 @@
     &__item{
       align-items: center;
       display: flex;
-
+      position: relative;
       
       
       &::before{
         $after-icon-size: 24px;
-        background: no-repeat url("/source/icons/list/check.svg") center/ cover;
-        content: "";
-        display: inline-block;
+        @extend %pseudos;
         height: $after-icon-size;
         margin-right: 1rem;
         vertical-align: middle;
         width: $after-icon-size;
+      }
+      
+      &--check::before{
+        background: no-repeat url("/source/icons/list/check.svg") center/ cover;
+      }
+
+      &--close{
+        text-decoration: line-through;
+      }
+
+      &--close::before{
+        background: no-repeat url("/source/icons/list/close.svg") center/ cover;
       }
     
       &:not(:last-child){

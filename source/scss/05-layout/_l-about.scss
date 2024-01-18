@@ -1,4 +1,5 @@
 @use '../02-tools/grid' as *;
+@use '../02-tools/_breakpoint.scss' as *;
 
 .l-about{
 
@@ -9,18 +10,41 @@
   & .wrapper > div{
     display: flex;
     gap: inherit;
+    
+    @include device(sm){
+      flex-direction: column;
+    }
   }
 
   .card--colorful{
     width: grid(4);
+    @include device(sm){
+      width: fit-content;
+    }
   }
 
   ul{
     display: flex;
     gap: inherit;
+    @include device(sm){
+      flex-direction: column;
+    }
     li.card{
-      width: grid(4);
       background: #fff;
+      width: grid(4);
+      
+      @include device(sm){
+        width: auto;
+      }
+      
+      @media screen and (max-width: 1089px){
+        flex-direction: column;
+        text-align: center;
+      }
+
+      @include device(lg){
+        flex-wrap: nowrap;
+      }
     }
   }
 }

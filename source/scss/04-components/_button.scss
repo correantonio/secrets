@@ -15,14 +15,13 @@
   }
 
   &--menu{
-    background: transparentize( #fff , 0.5);
+    background: transparentize( #fff , .7);
      border: 1px solid p-color(50);
      color: p-color(50);
   }
 
   &-badge{
     background: transparentize(#F2C2C2, .7);
-    // border: 1px solid currentColor;
     display: block;
     padding: 4px .5rem;
     text-wrap: nowrap;

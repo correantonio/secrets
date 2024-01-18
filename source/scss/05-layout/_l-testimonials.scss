@@ -1,4 +1,5 @@
 @use '../02-tools/grid' as *;
+@use '../02-tools/breakpoint' as *;
 
 %position-sticky{
   position: sticky;
@@ -6,14 +7,24 @@
 }
 
 .l-testimonials{
-  .wrapper > div {
-    width: grid(6);
-  }
 
-  .wrapper > :nth-child(2){
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  .wrapper{
+    @include device(md){
+     flex-direction: column;   
+    }
+
+    & > div {
+      width: grid(6);
+      @include device(sm){
+        width: grid(12); 
+      }
+    }
+
+    & > :nth-child(2){
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   h2{

@@ -1,10 +1,29 @@
 @use '../02-tools/grid' as *;
 @use '../02-tools/colors' as *;
+@use '../02-tools/breakpoint' as *;
 
 .l-author{
 
+  .wrapper{
+    @include device(sm){
+      flex-direction: column;
+    }
+  }
+
   .img, .content {
     width: grid(6);
+    @include device(sm){
+      width: auto;
+    }
+  }
+
+  .img{
+    @media screen and (min-width: 768px) and (max-width: 1089px){
+      img{
+        height: 100%;
+        object-fit: cover; 
+      }
+    }
   }
 
   h2{
