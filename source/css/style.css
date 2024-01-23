@@ -205,7 +205,9 @@ ul {
   cursor: pointer;
   display: inline-block;
   font: 600 1.125rem/24px "Manrope", sans-serif;
+  gap: 1rem;
   padding: 1rem 1.5rem;
+  text-align: center;
 }
 
 .button--main {
@@ -371,7 +373,8 @@ ul {
 
 @media screen and (max-width: 768px) {
   #l-hero > :nth-child(2) {
-    padding: 0 1rem;
+    box-shadow: 0 1rem 0 #f6f6f6;
+    padding: 0;
   }
 }
 #l-hero .conteudo {
@@ -551,11 +554,21 @@ ul {
   margin-bottom: 2.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .l-testimonials h2 {
+    position: static;
+  }
+}
 .l-testimonials ul {
   position: sticky;
   top: 200px;
 }
 
+@media screen and (max-width: 768px) {
+  .l-testimonials ul {
+    position: static;
+  }
+}
 .l-testimonials .testimonial {
   background: #fff;
   border: 1px solid #EBEBEB;
@@ -656,6 +669,8 @@ ul {
 
 @media screen and (max-width: 768px) {
   .l-timeline .timeline-course {
+    align-items: flex-start;
+    flex-direction: column-reverse;
     width: auto;
   }
 }

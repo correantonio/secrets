@@ -41,7 +41,8 @@
     position: relative;
 
     @include device(md){
-      padding: 0 1rem;
+      box-shadow: 0 1rem 0 #f6f6f6;
+      padding: 0;
     }
 
   }
