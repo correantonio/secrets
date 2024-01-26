@@ -500,7 +500,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .l-about .card--bg {
-    width: fit-content;
+    width: auto;
   }
 }
 .l-about .card--bg h3 {
