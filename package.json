@@ -4,7 +4,7 @@
   "description": "Refatoração do site do Secrets criado para @_correacris",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./source/scss/style.scss ./source/css/style.css --style=expanded"
+    "sass": "sass --watch ./source/scss/style.scss ./source/css/style.css --style=compressed"
   },
   "keywords": [],
   "author": "",
