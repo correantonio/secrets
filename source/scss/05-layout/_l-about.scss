@@ -23,6 +23,17 @@
     }
   }
 
+  .card--bg{
+    width: grid(8);
+    @include device(sm){
+      width: fit-content;
+    }
+    
+    h3 {
+      max-width: 382px;
+    }
+  }
+
   ul{
     display: flex;
     gap: inherit;

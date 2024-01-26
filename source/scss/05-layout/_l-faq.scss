@@ -1,17 +1,30 @@
 @use '../02-tools/breakpoint' as *;
+@use '../02-tools/grid' as *;
+
 
 .l-faq{
   
   .wrapper{
     
     @include device(sm){
-      flex-direction: column;
+      flex-direction: column;      
+    }  
+  }
 
-      & > :nth-child(1){
-        text-align: center;
-      }
-    }
+  .content{
+    width: grid(5);
     
+    @include device(sm){
+      text-align: center;
+      width: auto;
+    }  
+  }
+
+  .faq-list{
+    width: grid(7);
+    @include device(sm){
+      width: auto;
+    }
   }
 
   dl{
