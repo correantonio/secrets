@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #8B302F;
+  --color-darkus-10: #1A1C1F;
+  --color-darkus-20: #101114;
+  --color-darkus-30: #09090A;
+  --color-grayish-10: #DDE0EB;
+  --color-grayish-20: #ADAFB8;
+
+  --font-display: "Manrope", "sans-serif";
+  --font-body: "Inter", "sans-serif";
+  --price-bg-img: "../assets/05-Price/price-bg-img.jpg"
+}

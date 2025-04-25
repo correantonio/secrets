@@ -1,0 +1,34 @@
+[
+  {
+    "questao": "Como faço para que minha assinatura não se renove automaticamente?",
+    "resposta": "Acesse este tutorial completo e realize o passo a passo."
+  },
+  {
+    "questao": "É possível realizar a troca do plano mensal para o anual?",
+    "resposta": "Não, você precisa cancelar o plano atual antes de assinar o próximo, caso não faça isso, serão cobradas duas vezes (visto que você tem dois produtos em andamento)."
+  },
+  {
+    "questao": "O conteúdo é vitálicio?",
+    "resposta": "Você pode adquirir as chaves na modalidade anual e mensal que tem a duração de 1 ano e 1 mês respectivamente, portanto, você só terá acesso aos conteúdos enquanto a chave adquirida estiver com a data válida."
+  },
+  {
+    "questao": "Como posso efetuar o pagamento do Secrets",
+    "resposta": "O parcelamento é feito apenas para a Chave Anual, a chave mensal não possui formas de parcelamento (deve ser pago integralmente)."
+  },
+  {
+    "questao": "Realizei o pagamento via boleto e ainda não recebi o acesso",
+    "resposta": "A liberação do acesso ocorre em até 03 dias úteis (sábados, domingos e feriados não contam como tal) para pagamentos realizados via boleto bancário."
+  },
+  {
+    "questao": "Como faço para cancelar minha assinatura?",
+    "resposta": "Acesse o tutorial completo e realize o passo a passo"
+  },
+  {
+    "questao": "Qual o prazo para solicitar reembolso?",
+    "resposta": "O reembolso pode ser solicitado e integralmente efetuado dentro do prazo de 7 dias a partir da data de confirmação do pagamento. Após esse período não será possível solicitar o reembolso e ter o valor devolvido."
+  },
+  {
+    "questao": "Se eu adquirir o plano anual e depois de 2 meses (exemplo) não estiver gostando, tem como eu cancelar a assinatura? Teria uma multa ou teria que pagar os 12 meses?",
+    "resposta": "É importante ressaltar que o cancelamento e o reembolso são dois processos distintos e devem ser solicitados em paralelo. O cancelamento significa apenas que sua assinatura não se renovará automaticamente após o prazo de 1 mês (assinatura mensal) e 12 meses (assinatura anual). Portanto, você ainda permanecerá na plataforma até completar o período total da assinatura. O cancelamento não implica na devolução do valor investido. Sendo assim, caso deseje cancelar um serviço de assinatura, saiba que você deverá fazer dois processos: Solicitar o cancelamento e o reembolso. O reembolso pode ser solicitado e integralmente efetuado dentro do prazo de 7 dias a partir da data de confirmação do pagamento. Após esse período não será possível solicitar o reembolso e ter o valor devolvido."
+  }
+]
