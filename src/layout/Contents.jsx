@@ -37,7 +37,7 @@ const Contents = () => {
         ></Heading>
           <ArrowDown className='animate-bounce text-grayish-10 mx-auto size-5'/>
       </div>
-      <section className="lg:max-w-10/12 lg:p-20 mx-auto bg-darkus-20 p-10">
+      <section className="lg:max-w-10/12 px-4 py-8 lg:p-20 mx-auto bg-darkus-20">
         <div>
           <div className="flex flex-col gap-4 lg:flex-row text-left justify-center items-center mb-10">
             <div className='text-center'>

@@ -46,7 +46,7 @@ const Community = () => {
             outras pessoas que escolheram aprender sobre o feminismo do jeito
             certo.
           </Text>
-          <Button>Quero fazer parte do Secrets</Button>
+          <Button link={"#price"}>Quero fazer parte do Secrets</Button>
         </div>
       </section>
     </article>
