@@ -34,7 +34,7 @@ const Price = () => {
       id="price"
       className="bg-[url(./assets/05-Price/price-bg-img.jpg)] bg-no-repeat bg-top"
     >
-      <section className="container grid py-20 px-6 mx-auto lg:flex lg:gap-10 items-center justify-center">
+      <section className="container flex flex-col py-20 px-6 mx-auto lg:flex-row lg:gap-10 items-center justify-center">
         <div className="lg:max-w-7/12 order-2 lg:order-1">
           <Titleh2>Garantia incondicional</Titleh2>
           <Text>
@@ -63,7 +63,7 @@ const Price = () => {
             ))}
           </ul>
         </div>
-        <div className="bg-darkus-20 py-8 px-4 mt-32 mb-8 text-center grid gap-10 lg:max-w-5/12 lg:my-16 lg:order-2 shadow-[0px_357px_100px_0px_rgba(0,0,0,0.00),0px_228px_91px_0px_rgba(0,0,0,0.04),0px_128px_77px_0px_rgba(0,0,0,w0.13),0px_57px_57px_0px_rgba(0,0,0,0.21),0px_14px_31px_0px_rgba(0,0,0,0.25)] 
+        <div className="bg-darkus-20 py-8 px-4 mt-32 mb-8 text-center flex flex-col gap-10 lg:max-w-5/12 lg:my-16 lg:order-2 shadow-[0px_357px_100px_0px_rgba(0,0,0,0.00),0px_228px_91px_0px_rgba(0,0,0,0.04),0px_128px_77px_0px_rgba(0,0,0,w0.13),0px_57px_57px_0px_rgba(0,0,0,0.21),0px_14px_31px_0px_rgba(0,0,0,0.25)] 
         relative before:absolute before:animate-pulse before:-z-[5] before:-inset-1  before:bg-gradient-to-b before:from-blue-300 before:to-pink-300">
           <div>
             <h3 className="font-display text-[1.25rem] text-grayish-10 mb-6 font-bold lg:text-[1.5rem]">
@@ -76,16 +76,16 @@ const Price = () => {
           </div>
           <div>
             <p className="font-display text-grayish-10 text-3xl lg:text-5xl font-bold mb-1">
-              R$ 597,99
+              R$ 598,80
             </p>
-            <Text>ou 12x de R$ 66,49</Text>
+            <Text>ou 12x de R$ 49,90</Text>
           </div>
 
           <div className="grid gap-8 place-items-center">
             <Button link={'https://chk.eduzz.com/D0RAB42B9Y'}>
               Quero fazer parte do Secrets
             </Button>
-            <Payments />
+            <Payments className="max-w-full" />
           </div>
         </div>
       </section>
