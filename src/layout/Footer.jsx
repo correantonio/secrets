@@ -7,14 +7,12 @@ const Footer = () => {
     <footer className="bg-darkus-20">
       <div className="container mx-auto pt-20 pb-4 px-6 flex justify-center flex-col gap-8 items-center text-center">
         <div className="flex gap-2 flex-col md:flex-row md:gap-4 items-center">
-          <a
-            href=""
+          <a target="_blank" rel="noopener noreferrer" href="https://cristianecorrea.com.br/termos-de-servico/"
             className="font-display md:text-[1.125rem]/6 text-grayish-20 underline decoration-solid decoration-grayish-10"
           >
             Termos de uso
           </a>
-          <a
-            href=""
+          <a target="_blank" rel="noopener noreferrer" href="https://cristianecorrea.com.br/politica-de-privacidade/"
             className="font-display md:text-[1.125rem]/6 text-grayish-20 underline decoration-solid decoration-grayish-10"
           >
             Política de Privacidade

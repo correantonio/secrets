@@ -34,18 +34,12 @@ const Price = () => {
       id="price"
       className="bg-[url(./assets/05-Price/price-bg-img.jpg)] bg-no-repeat bg-top"
     >
-      <section className="container flex flex-col py-20 px-6 mx-auto lg:flex-row lg:gap-10 items-center justify-center">
-        <div className="lg:max-w-7/12 order-2 lg:order-1">
-          <Titleh2>Garantia incondicional</Titleh2>
-          <Text>
-            Se você garantiu seu acesso ao Secrets e depois de assistir a
-            algumas aulas viu que não era o que pensava, em até 7 dias seu
-            dinheiro é devolvido
-          </Text>
-          <ul className="mt-12">
+      <section className="container flex flex-col gap-16 py-20 lg:pt-48 px-6 mx-auto lg:flex-row lg:gap-10">
+        <div className="lg:max-w-4/12 grid grid-rows-2 order-2 lg:order-1">
+          <ul>
             {list.map((item, index) => (
               <li key={index} className="flex gap-4">
-                <div className="mb-4"> {item.icon} </div>
+                <div className="mb-4 lg:mb-0"> {item.icon} </div>
                 <div>
                   <Text>
                     <b className="font-display text-grayish-10">
@@ -62,30 +56,83 @@ const Price = () => {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="bg-darkus-20 py-8 px-4 mt-32 mb-8 text-center flex flex-col gap-10 lg:max-w-5/12 lg:my-16 lg:order-2 shadow-[0px_357px_100px_0px_rgba(0,0,0,0.00),0px_228px_91px_0px_rgba(0,0,0,0.04),0px_128px_77px_0px_rgba(0,0,0,w0.13),0px_57px_57px_0px_rgba(0,0,0,0.21),0px_14px_31px_0px_rgba(0,0,0,0.25)] 
-        relative before:absolute before:animate-pulse before:-z-[5] before:-inset-1  before:bg-gradient-to-b before:from-blue-300 before:to-pink-300">
-          <div>
-            <h3 className="font-display text-[1.25rem] text-grayish-10 mb-6 font-bold lg:text-[1.5rem]">
-              Tenha acesso ao Secrets por 12 meses sem interrupção por apenas
-            </h3>
+          <div className='bg-darkus-30 p-8'>
+            <Titleh2>Garantia incondicional</Titleh2>
             <Text>
-              São mais de X horas de conteúdo que vão te edificar de uma forma
-              como você nunca imaginou e com conteúdos sempre em atualização
+              Se você garantiu seu acesso ao Secrets e depois de assistir a
+              algumas aulas viu que não era o que pensava, em até 7 dias seu
+              dinheiro é devolvido
             </Text>
+            <Payments className="w-2xs max-w-full my-4" />
           </div>
-          <div>
-            <p className="font-display text-grayish-10 text-3xl lg:text-5xl font-bold mb-1">
-              R$ 598,80
+        </div>
+        <div className="bg-darkus-20 grid grid-rows-2 relative lg:max-w-4/12 lg:order-2">
+          <div className="p-8">
+            <h3 className="font-display text-3xl text-grayish-10 mb-6 font-bold lg:text-4xl">
+              Plano anual
+            </h3>
+            <ul className="list-disc marker:text-accent list-inside [&>*:nth-child(odd)]:bg-darkus-10">
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                12 Meses de acesso
+              </li>
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                Acesso a todos os meus Conteúdos e Cursos
+              </li>
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                Mais de 30 horas de Aulas
+              </li>
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                Suporte prêmium
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-2 text-center items-center justify-between bg-darkus-30 p-8">
+            <spam className="text-grayish-20">até 12x de</spam>
+            <p className="font-display text-white text-4xl lg:text-6xl font-bold">
+              R$ 47,50
             </p>
-            <Text>ou 12x de R$ 49,90</Text>
-          </div>
-
-          <div className="grid gap-8 place-items-center">
+            <spam className="text-grayish-20 mb-2">
+              à vista R$ 570
+              <br />
+              <span className="text-sm text-lime-400 font-medium italic">
+                parcelamento sem juros
+              </span>
+            </spam>
             <Button link={'https://chk.eduzz.com/D0RAB42B9Y'}>
-              Quero fazer parte do Secrets
+              Entrar para o Secrets
             </Button>
-            <Payments className="max-w-full" />
+          </div>
+          <span className='absolute inline-block py-2 px-4 bg-[#eac1c1] text-sm italic -left-4 -top-4 font-bold text-accent'>recomendado</span>
+        </div>
+        <div className="bg-darkus-20 grid grid-rows-2 lg:max-w-4/12 lg:order-2">
+          <div className="p-8">
+            <h3 className="font-display text-3xl text-grayish-10 mb-6 font-bold lg:text-4xl">
+              Plano mensal
+            </h3>
+            <ul className="list-disc marker:text-accent list-inside [&>*:nth-child(odd)]:bg-darkus-10">
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                01 Mes de acesso
+              </li>
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                Acesso a todos os meus Conteúdos e Cursos
+              </li>
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                Mais de 30 horas de Aulas
+              </li>
+              <li className="px-2 py-2 text-grayish-10 text-lg hover:text-white">
+                Suporte
+              </li>
+            </ul>
+          </div>
+          <div className="flex flex-col gap-2 text-center items-center bg-darkus-30 p-8 h-full justify-between">
+            <spam className="text-grayish-20">pague 1x ao mês</spam>
+            <p className="font-display text-white text-4xl lg:text-6xl font-bold">
+              R$ 57
+            </p>
+            <spam className="text-grayish-20">pagamento sem acréscimos</spam>
+            <Button link={'https://chk.eduzz.com/D0RAB42B9Y'}>
+              Quero ser assinante mensal
+            </Button>
           </div>
         </div>
       </section>

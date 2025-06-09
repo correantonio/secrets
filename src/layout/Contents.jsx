@@ -65,7 +65,7 @@ const Contents = () => {
 
         <div className="grid gap-x-10 gap-y-5 mt-10 md:grid-cols-2 lg:justify-items-center lg:max-w-10/12 lg:mx-auto">
           {imgsCourses.map((item, index) => (
-            <div className="lg:w-full">
+            <div className="lg:w-full" >
               <img
                 className="w-full object-cover"
                 src={item}
