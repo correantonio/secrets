@@ -32,7 +32,7 @@ const Contents = () => {
         <Heading
           Title={'Ao assinar você terá acesso a uma série de conteúdos'}
           Description={
-            'São vários cursos, aulas, jornadas, bate-papos etc. Você também terá acesso um canal de comunicação direta onde você poderá tirar dúvidas sobre qualquer conteúdo da plataforma além de interagir com a Cris e os demais membros.'
+            'São vários cursos, aulas, jornadas, bate-papos etc. Você terá acesso a um canal de comunicação direta onde você poderá tirar dúvidas sobre qualquer conteúdo da plataforma além de interagir com a Cris e os demais membros.'
           }
         ></Heading>
         <ArrowDown className="animate-bounce text-grayish-10 mx-auto size-5" />
