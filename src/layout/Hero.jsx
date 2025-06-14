@@ -23,7 +23,7 @@ const Hero = () => {
           sobre política, fé e futilidades — tudo com profundidade e propósito,
           sem filtros e longe da narrativa dominante.
         </Text>
-        <Button link={"#price"}>Pegue sua chave aqui</Button>
+        <a href="#price" className='flex w-fit items-center gap-2 px-6 py-3 hover:-translate-y-1 font-display text-lg text-grayish-10 bg-accent shadow-lg shadow-accent/50 cursor-pointer hover:bg-accent/80 transition' >Pegue sua chave aqui</a>
 
         </div>
       </div>

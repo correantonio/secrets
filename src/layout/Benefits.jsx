@@ -32,7 +32,7 @@ const Benefits = () => {
                 'Descubra um Novo Olhar sobre Feminismo e Cristianismo. Agora, você pode explorar e compreender o antagonismo entre essas duas forças históricas. Acesso ilimitado a todo o conteúdo disponível na plataforma. Atualizações exclusivas durante sua assinatura, mantendo você sempre informado. Fortaleça seus princípios com conhecimento aprofundado e reflexões essenciais.'
               }
             />
-            <ul className="grid gap-6 mb-10 lg:grid-cols-2 mt-[72px]">
+            <ul className="grid gap-6 mb-10 xl:grid-cols-2 mt-[72px]">
               {listItens.map((item, index) => (
                 <li
                   className="font-body text-grayish-20 p-8 bg-darkus-20 border border-darkus-30"

@@ -30,11 +30,9 @@ const Price = () => {
     },
   ];
   return (
-    <article
-      id="price"
-      className="bg-[url(./assets/05-Price/price-bg-img.jpg)] bg-no-repeat bg-top"
+    <article id="price" className="bg-[url(./assets/05-Price/price-bg-img.jpg)] bg-no-repeat bg-top"
     >
-      <section className="container grid lg:grid-cols-3 gap-16 py-20 lg:pt-48 px-6 mx-auto lg:gap-10">
+      <section className="container grid xl:grid-cols-3 gap-16 py-20 lg:pt-48 px-6 mx-auto lg:gap-10">
         <div className="grid grid-rows-2 order-2 lg:order-1">
           <ul>
             {list.map((item, index) => (
@@ -102,14 +100,14 @@ const Price = () => {
               47,50
             </p>
             <spam className="text-grayish-20 mb-2">
-            <span className="text-sm text-grayish-10 font-medium italic">
-              - parcelamento sem juros -
-            </span>
-            <br />
+              <span className="text-sm text-grayish-10 font-medium italic">
+                - parcelamento sem juros -
+              </span>
+              <br />
               ou à vista R$ 570
             </spam>
             <span className="flex justify-center my-2">
-              <Button link={'https://chk.eduzz.com/D0RAB42B9Y'}>
+              <Button link={'https://chk.eduzz.com/VWGZZVNV07'}>
                 Entrar para o Secrets
               </Button>
             </span>
@@ -140,7 +138,7 @@ const Price = () => {
               <span className="text-2xl lg:text-4xl text-grayish-20">/mês</span>
             </p>
             <span className="flex justify-center mb-2">
-              <Button link={'https://chk.eduzz.com/D0RAB42B9Y'}>
+              <Button link={'https://chk.eduzz.com/40Q336RP0B'}>
                 Quero ser assinante mensal
               </Button>
             </span>

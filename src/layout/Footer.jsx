@@ -27,7 +27,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/__antoniocorrea/"
+            href="https://www.instagram.com/euantoniocorrea/"
             className="underline underline-offset-4 decoration-blue-400 text-grayish-10 font-semibold hover:decoration-blue-600"
           >
             Antônio Corrêa
