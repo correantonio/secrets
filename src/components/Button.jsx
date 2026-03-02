@@ -1,15 +1,15 @@
-import React from 'react'
 import { ArrowRight } from 'lucide-react'
+import classes from './Button.module.css'
+import SmartLink from './SmartLink'
 
 const Button = ({ children, link }) => {
   return (
-    <a className='flex w-fit items-center gap-2 px-6 py-3 hover:-translate-y-1 font-display text-lg text-grayish-10 bg-accent shadow-lg shadow-accent/50 cursor-pointer hover:bg-accent/80 transition' 
-    target="_blank"
-    rel="noopener noreferrer"
-    href={link}>
-      { children }
-      <span><ArrowRight width={20} height={20}/></span>
-    </a>
+    <div className={classes.btnFluffy}>
+      <SmartLink className={classes.btnFluffy__link} href={link}>
+        {children}
+        <span><ArrowRight width={20} height={20}/></span>
+      </SmartLink>
+    </div>
   )
 }
 
