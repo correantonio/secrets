@@ -1,4 +1,3 @@
-import React from 'react';
 import Peoples from '../assets/04-Community/icons/comunity.svg?react';
 import Graduation from '../assets/04-Community/icons/graduation.svg?react';
 import Titleh2 from '../components/Fonts/Titleh2';
@@ -52,7 +51,7 @@ const Community = () => {
             outras pessoas que escolheram aprender sobre o feminismo do jeito
             certo.
           </Text>
-          <a href="#price" className='flex w-fit items-center gap-2 px-6 py-3 hover:-translate-y-1 font-display text-lg text-grayish-10 bg-accent shadow-lg shadow-accent/50 cursor-pointer hover:bg-accent/80 transition' >Quero fazer parte do Secrets</a>
+          <Button link="#price">Quero fazer parte do Secrets</Button>
         </div>
       </section>
     </article>

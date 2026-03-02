@@ -97,17 +97,17 @@ const Price = () => {
               <span className="text-2xl lg:text-4xl text-grayish-20">
                 12x R${' '}
               </span>
-              47,50
+              23,25
             </p>
             <spam className="text-grayish-20 mb-2">
               <span className="text-sm text-grayish-10 font-medium italic">
                 - parcelamento sem juros -
               </span>
               <br />
-              ou à vista R$ 570
+              ou à vista R$ 279
             </spam>
             <span className="flex justify-center my-2">
-              <Button link={'https://chk.eduzz.com/VWGZZVNV07'}>
+              <Button link={'https://chk.eduzz.com/8WPAQ8OEWP'}>
                 Entrar para o Secrets
               </Button>
             </span>
@@ -134,11 +134,11 @@ const Price = () => {
             <spam className="text-grayish-20">pague</spam>
             <p className="font-display text-white text-4xl lg:text-6xl font-bold my-4">
               <span className="text-2xl lg:text-4xl text-grayish-20">R$ </span>
-              57{' '}
+              27,90{' '}
               <span className="text-2xl lg:text-4xl text-grayish-20">/mês</span>
             </p>
             <span className="flex justify-center mb-2">
-              <Button link={'https://chk.eduzz.com/40Q336RP0B'}>
+              <Button link={'https://chk.eduzz.com/89AQB2V5WD'}>
                 Quero ser assinante mensal
               </Button>
             </span>

@@ -76,7 +76,7 @@ const Contents = () => {
           ))}
         </div>
       </section>
-      <Blur className="absolute -top-70 -z-10" />
+      <Blur className="absolute -top-70 -z-10 animate-pulse" />
     </article>
   );
 };
