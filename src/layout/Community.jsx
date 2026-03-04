@@ -4,6 +4,7 @@ import Titleh2 from '../components/Fonts/Titleh2';
 import Text from '../components/Fonts/Text';
 import Button from '../components/Button';
 import communityIMG from '../assets/04-Community/community-img.jpg';
+import AnimatedContent from '../components/AnimatedContent';
 
 const Community = () => {
   const list = [
@@ -21,11 +22,25 @@ const Community = () => {
     <article>
       <section className="container mx-auto py-20 px-6 lg:flex lg:gap-10 items-center justify-center">
         <div className="mb-10 lg:max-w-5/12">
+        <AnimatedContent
+            distance={200}
+            direction="vertical"
+            reverse={false}
+            duration={1.5}
+            ease="power3.out"
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            threshold={0.5}
+            delay={0}
+          >
           <img
             src={communityIMG}
             alt="A comunidade do Secrets no Telegram é ativa e com diversas pessoas engajadas"
             className="mx-auto shadow-[0px_357px_100px_0px_rgba(0,0,0,0.00),0px_228px_91px_0px_rgba(0,0,0,0.04),0px_128px_77px_0px_rgba(0,0,0,0.13),0px_57px_57px_0px_rgba(0,0,0,0.21),0px_14px_31px_0px_rgba(0,0,0,0.25)]"
           />
+
+        </AnimatedContent>
         </div>
         <div className="lg:max-w-7/12">
           <Titleh2>Assine o Secrets e ganhe</Titleh2>

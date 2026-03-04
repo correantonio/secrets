@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Heading from '../components/Heading';
-import Titleh2 from '../components/Fonts/Titleh2';
 import Text from '../components/Fonts/Text';
 import Blur from '../assets/03-Contents/accentIlumination.svg?react';
 import { ArrowDown, CircleAlert } from 'lucide-react';
+import AnimatedContent from '../components/AnimatedContent';
 
 const Contents = () => {
   const [imagens, setImagens] = useState([]);
@@ -64,7 +64,20 @@ const Contents = () => {
         </div>
 
         <div className="grid gap-x-10 gap-y-5 mt-10 md:grid-cols-2 lg:justify-items-center lg:max-w-10/12 lg:mx-auto">
+
           {imgsCourses.map((item, index) => (
+            <AnimatedContent
+              distance={100}
+              direction="vertical"
+              reverse={false}
+              duration={0.8}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={0}
+            >
             <div className="lg:w-full" >
               <img
                 className="w-full object-cover"
@@ -73,7 +86,9 @@ const Contents = () => {
                 alt="curso plataforma"
               />
             </div>
+            </AnimatedContent>
           ))}
+
         </div>
       </section>
       <Blur className="absolute -top-70 -z-10 animate-pulse" />

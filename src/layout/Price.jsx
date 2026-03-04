@@ -7,6 +7,7 @@ import IconDiscussion from '../assets/05-Price/icons/discussion.svg?react';
 import IconWarrantly from '../assets/05-Price/icons/warrantly.svg?react';
 import Payments from '../assets/05-Price/icons/payments.svg?react';
 import { ArrowRight, OctagonAlert } from 'lucide-react';
+import AnimatedContent from '../components/AnimatedContent';
 
 const Price = () => {
   const list = [
@@ -34,7 +35,20 @@ const Price = () => {
     >
       <section className="container grid xl:grid-cols-3 gap-16 py-20 lg:pt-48 px-6 mx-auto lg:gap-10">
         <div className="grid grid-rows-2 order-2 lg:order-1">
+
           <ul>
+      <AnimatedContent
+            distance={100}
+            direction="vertical"
+            reverse={false}
+            duration={0.8}
+            ease="power3.out"
+            initialOpacity={0}
+            animateOpacity
+            scale={1}
+            threshold={0.1}
+            delay={0}
+          >
             {list.map((item, index) => (
               <li key={index} className="flex gap-4">
                 <div className="mb-4 lg:mb-0"> {item.icon} </div>
@@ -53,7 +67,10 @@ const Price = () => {
                 </div>
               </li>
             ))}
+      </AnimatedContent>
           </ul>
+
+          
           <div className="bg-darkus-30 p-8">
             <Titleh2>Garantia incondicional</Titleh2>
             <Text>

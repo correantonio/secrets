@@ -1,9 +1,11 @@
 import React from 'react';
 import Text from '../components/Fonts/Text';
 import { ArrowUpRight } from 'lucide-react';
+import CurvedLoop from '../components/CurvedLoop';
 
 const Footer = () => {
   return (
+    <>  
     <footer className="bg-darkus-20">
       <div className="container mx-auto pt-20 pb-4 px-6 flex justify-center flex-col gap-8 items-center text-center">
         <div className="flex gap-2 flex-col md:flex-row md:gap-4 items-center">
@@ -38,8 +40,10 @@ const Footer = () => {
             className="-translate-x-[20px] opacity-0 group-hover:-translate-x-0 group-hover:opacity-100 transition-all ease-in-out"
           />
         </span>
-      </div>
+      </div>      
     </footer>
+    <CurvedLoop marqueeText="Não ✦ Existe ✦ Feminista ✦ Cristã ✦" />
+    </>
   );
 };
 
