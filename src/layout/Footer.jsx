@@ -5,8 +5,8 @@ import CurvedLoop from '../components/CurvedLoop';
 
 const Footer = () => {
   return (
-    <>  
-    <footer className="bg-darkus-20">
+    <div className='bg-darkus-20'>  
+    <footer>
       <div className="container mx-auto pt-20 pb-4 px-6 flex justify-center flex-col gap-8 items-center text-center">
         <div className="flex gap-2 flex-col md:flex-row md:gap-4 items-center">
           <a target="_blank" rel="noopener noreferrer" href="https://cristianecorrea.com.br/termos-de-servico/"
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>      
     </footer>
     <CurvedLoop marqueeText="Não ✦ Existe ✦ Feminista ✦ Cristã ✦" />
-    </>
+    </div>
   );
 };
 

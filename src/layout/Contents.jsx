@@ -4,6 +4,7 @@ import Text from '../components/Fonts/Text';
 import Blur from '../assets/03-Contents/accentIlumination.svg?react';
 import { ArrowDown, CircleAlert } from 'lucide-react';
 import AnimatedContent from '../components/AnimatedContent';
+import CurvedLoop from '../components/CurvedLoop';
 
 const Contents = () => {
   const [imagens, setImagens] = useState([]);
@@ -27,6 +28,7 @@ const Contents = () => {
   }, []);
 
   return (
+    <div className='relative'>
     <article className="container mx-auto px-6 py-8 flex flex-col gap-10 text-center relative z-10">
       <div className="lg:max-w-7/12 mx-auto">
         <Heading
@@ -93,6 +95,18 @@ const Contents = () => {
       </section>
       <Blur className="absolute -top-70 -z-10 animate-pulse" />
     </article>
+      <div className='lg:absolute -bottom-40 -z-10 w-full'>
+        <CurvedLoop 
+          marqueeText="Não ✦ Existe ✦ Feminista ✦ Cristã ✦"
+          speed={1}
+          curveAmount={0}
+          direction="right"
+          interactive
+            className="custom-text-style"
+          >
+        </CurvedLoop>
+      </div>
+    </div>
   );
 };
 
