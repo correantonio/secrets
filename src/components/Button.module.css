@@ -8,7 +8,6 @@ div.btnFluffy {
 
 div.btnFluffy {
   padding: calc(var(--_fluffy-module) / 3);
-  background: #c6b2b145;
   width: fit-content;
   box-shadow: rgba(139, 48, 47, 0.25) 0px 25px 20px -20px;
 

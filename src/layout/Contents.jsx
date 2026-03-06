@@ -93,14 +93,14 @@ const Contents = () => {
 
         </div>
       </section>
-      <Blur className="absolute -top-70 -z-10 animate-pulse" />
+      <Blur className="absolute right-0 left-0 -top-70 -z-10 animate-pulse" />
     </article>
-      <div className='lg:absolute -bottom-40 -z-10 w-full'>
+      <div className='lg:absolute -bottom-0 lg:-bottom-40 -z-10 w-full opacity-10'>
         <CurvedLoop 
-          marqueeText="Não ✦ Existe ✦ Feminista ✦ Cristã ✦"
-          speed={1}
+          marqueeText=" Não Existe Feminista Cristã ✦"
+          speed={2}
           curveAmount={0}
-          direction="right"
+          direction="left"
           interactive
             className="custom-text-style"
           >

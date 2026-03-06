@@ -5,7 +5,7 @@ import CurvedLoop from '../components/CurvedLoop';
 
 const Footer = () => {
   return (
-    <div className='bg-darkus-20'>  
+    <div className='bg-darkus-20 relative'>  
     <footer>
       <div className="container mx-auto pt-20 pb-4 px-6 flex justify-center flex-col gap-8 items-center text-center">
         <div className="flex gap-2 flex-col md:flex-row md:gap-4 items-center">
@@ -42,7 +42,17 @@ const Footer = () => {
         </span>
       </div>      
     </footer>
-    <CurvedLoop marqueeText="Não ✦ Existe ✦ Feminista ✦ Cristã ✦" />
+          <div className='lg:absolute -top-0 lg:-top-5  w-full'>
+        <CurvedLoop 
+          marqueeText=" Não Existe Feminista Cristã ✦"
+          speed={2}
+          curveAmount={0}
+          direction="left"
+          interactive
+            className="custom-text-style"
+          >
+        </CurvedLoop>
+      </div>
     </div>
   );
 };

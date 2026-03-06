@@ -20,7 +20,7 @@ const Community = () => {
 
   return (
     <article>
-      <section className="container mx-auto py-20 px-6 lg:flex lg:gap-10 items-center justify-center">
+      <section className="container mx-auto pt-0 md:pt-20 pb-20 px-6 lg:flex lg:gap-10 items-center justify-center">
         <div className="mb-10 lg:max-w-5/12">
         <AnimatedContent
             distance={200}
@@ -31,7 +31,7 @@ const Community = () => {
             initialOpacity={0}
             animateOpacity
             scale={1}
-            threshold={0.5}
+            threshold={0}
             delay={0}
           >
           <img

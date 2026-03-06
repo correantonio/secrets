@@ -71,7 +71,7 @@ const Benefits = () => {
             initialOpacity={0}
             animateOpacity
             scale={1}
-            threshold={0.5}
+            threshold={0}
             delay={0}
           >
 
